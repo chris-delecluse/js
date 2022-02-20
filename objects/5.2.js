@@ -12,10 +12,23 @@ const askTvSerie = () => {
     nbrCastingMembers = readlineSync.questionInt("Enter the number of casting member you want add : ");
 
     for (let i = 0; i < nbrCastingMembers; i++) {
-        tvSerie.castMember.push(readlineSync.question("Enter the name of actor : "));
+        tvSerie.castMember.push(readlineSync.question("Enter the name of cast : "));
     }
 
     console.log("\n---------------------------------\n");
 
     return tvSerie;
 }
+
+const randomizeCast = (tvSerie) => {
+   tvSerie.castMember = tvSerie.castMember.sort(()=>Math.random()-0.5);
+   return tvSerie;
+}
+
+a = askTvSerie();
+
+console.log(JSON.stringify(a, null, 5)); // display a object to JSON format.
+console.log("--------------")
+
+b = randomizeCast(a);
+console.log(JSON.stringify(b, null, 5)); // display a object to JSON format.

@@ -12,7 +12,7 @@ const askTvSerie = () => {
     nbrCastingMembers = readlineSync.questionInt("Enter the number of casting member you want add : ");
 
     for (let i = 0; i < nbrCastingMembers; i++) {
-        tvSerie.castMember.push(readlineSync.question("Enter the name of actor : "));
+        tvSerie.castMember.push(readlineSync.question("Enter the name of cast : "));
     }
 
     console.log("\n---------------------------------\n");
