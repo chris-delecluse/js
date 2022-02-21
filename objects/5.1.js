@@ -15,11 +15,11 @@ const askTvSerie = () => {
         tvSerie.castMember.push(readlineSync.question("Enter the name of cast : "));
     }
 
-    console.log("\n---------------------------------\n");
-
     return tvSerie;
 }
 
 enjoy = askTvSerie();
+
+console.log("\n---------------------------------\n");
 
 console.log(JSON.stringify(enjoy, null, 5)); // display a object to JSON format.

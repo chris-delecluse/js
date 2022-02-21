@@ -15,8 +15,6 @@ const askTvSerie = () => {
         tvSerie.castMember.push(readlineSync.question("Enter the name of cast : "));
     }
 
-    console.log("\n---------------------------------\n");
-
     return tvSerie;
 }
 
@@ -25,10 +23,9 @@ const randomizeCast = (tvSerie) => {
    return tvSerie;
 }
 
-a = askTvSerie();
-
+let a = askTvSerie();
+console.log("\n---------------------------------\n");
 console.log(JSON.stringify(a, null, 5)); // display a object to JSON format.
-console.log("--------------")
-
-b = randomizeCast(a);
+console.log("\n---------------------------------\n");
+let b = randomizeCast(a);
 console.log(JSON.stringify(b, null, 5)); // display a object to JSON format.
