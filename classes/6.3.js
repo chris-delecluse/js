@@ -46,7 +46,7 @@ const isCollide = (array, srcElement) => {
     }
 }
 
-a = new Rectangle(1, 1, 20, 20);
-b = rectangleGenerator(1000);
+let a = new Rectangle(1, 1, 20, 20);
+let b = rectangleGenerator(1000);
 
 isCollide(b, a);

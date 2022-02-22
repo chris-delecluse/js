@@ -1,6 +1,6 @@
 const readlineSync = require("readline-sync");
 
-console.log("Hello, i will ask you to enter three numbers: min, max and current (one by one) \n")
+console.log("Hello, I will ask you to enter three numbers: min, max and current (one by one) \n")
 
 let min = readlineSync.questionInt("Enter the min number : ");
 let max = readlineSync.questionInt("Enter the max number : ");
